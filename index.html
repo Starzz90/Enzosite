@@ -271,25 +271,6 @@
         width: 100px;
         height: 100px;
     }
-    .collapsible{
-        display: none;
-        padding: 10px;
-        background-color: #222;
-        color: Blue;
-        border-radius: 5px;
-        margin-top: 10px;
-    }
-    .collapse-btn{
-        background-color: #ff9900;
-        color: Orange;
-        padding: 8px;
-        border: none;
-        cursor: pointer;
-        margin-top: 5px;
-        border-radius: 5px;
-    }
-    .collapse-btn:hover{
-        background-color: #ff6600;
     <head>{
         <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
         <style>
@@ -306,10 +287,6 @@
                     <h1>MY PORTFOLIO</h1>
             </div>
         </div>
-    </div>
-    <button onclick= "toggleSection()">View More</button>
-    <div id= "more-info" style= "display:none;">
-        <p>MY ACHIEVEMENTS</p>
     </div>
     </script>
     <script src="script.js"></script>
@@ -356,9 +333,6 @@
 
            
         <div class="achievements-section">
-            <button class= "collapsable-btn"
-                onclick= "toggleSection('achievements')"> Show Achievements</button>
-            <div id= "achievements" class= "collapsible">
                 <h2><img src='https://static.vecteezy.com/system/resources/previews/009/315/016/original/winner-trophy-in-flat-style-free-png.png'class= 'Achivement-image'>Achievements: Ranked by Merit ( 2023 - 2027 )</h2>
                     <p>&rarr;💬IELTA ( International English Lecturer and Teacher Association ) Webinar Speaker (2025)</p><a href="https://ielta.org/webinar" class="inline-link">View IELTA</a>
                     <p>&rarr; WOSCO ( WORLD SCIENCE OLYMPIAD ) ENGLISH LEVEL 3 (2025) --
@@ -392,7 +366,6 @@
                         <p>&rarr;🌟Experience in handling financial transactions for a store with 7 years of experience</p>
                         <p>&rarr;🌟Learned Photography in summer catching wildlife and sceneries</p>
                     </div>
-            </div>
             </div>
         <div class= "achivements-section">
             <div class= "container">
