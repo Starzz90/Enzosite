@@ -23,6 +23,42 @@
             animation : fadeIn 1s ease-in-out;
             -webkit-animation: fadeIn 1s ease-in-out;
         }
+         <title>Dark Mode Toggle</title>
+        :root {
+            --bg-color: white;
+            --text-color: black;
+        }
+        
+        .dark-mode {
+            --bg-color: black;
+            --text-color: white;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background 0.3s, color 0.3s;
+        }
+
+        button {
+            margin: 20px;
+            padding: 10px;
+            cursor: pointer;
+        }
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+            localStorage.setItem("darkMode", document.body.classList.contains("dark-mode"));
+        }
+
+        // Load theme preference
+        if (localStorage.getItem("darkMode") === "true") {
+            document.body.classList.add("dark-mode");
+        }
+    </script>
+        }
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
