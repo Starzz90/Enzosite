@@ -1,22 +1,30 @@
         :root{
           --base-color:#070f4d;
           --variant:#E87722;
-          --text-color:#E87722;
-          --secondary-text: #FFFFFF;
-          --primary-color: #;
-          --accent-color: #;
+          --text-color:#FFFFFF;
+          --secondary-text: #0A1F44;
+          --primary-color: #0A1F44;
+          --accent-color: #E2AF1D;
         }
         body {
-            background-color: #070f4d;
+            background-color: var(--base-color);
             background-size: cover;
             font-family: 'JetBrains Mono', monospace;
             font-size: 15px;
             margin: 0;
             padding: 0;
-            color: #FFFFFF;
+            color: var(--text-color);
             text-align: center;
             animation : fadeIn 1s ease-in-out;
             -webkit-animation: fadeIn 1s ease-in-out;
+        }
+        .lightmode{
+          --base-color:#F5F5F5;
+          --variant:#C4002F;
+          --text-color: #333333;
+          --secondary-text: #000000;
+          --primary-color: #0A1F44;
+          --accent-color: #000000;    
         }
         @keyframes fadeIn {
             from { opacity: 0; }
