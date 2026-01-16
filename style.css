@@ -6,7 +6,7 @@
             font-size: 15px;
             margin: 0;
             padding: 0;
-            color: var(--text-color);
+            color: white;
             text-align: center;
             animation : fadeIn 1s ease-in-out;
             -webkit-animation: fadeIn 1s ease-in-out;
@@ -122,7 +122,7 @@
             -webkit-animation-iteration-count: infinite;
             }
         .btn {
-            background: var(--variant); /* Bright blue */
+            background: /*Bright blue */ #e7cc3a;
             color: white;
             padding: 10px 20px;
             text-decoration: none;
