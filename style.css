@@ -254,7 +254,7 @@
             background-color: var(--base-color);
             padding: 10px;
             border-radius: 20px;
-            border: var(--accent-color);
+            border: 5px var(--accent-color);
             margin-top: 0px;
             animation: fadeIn 1.5s ease-in-out;
             line-height: 1.5;
