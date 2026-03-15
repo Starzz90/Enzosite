@@ -40,6 +40,10 @@
             padding: 20px 20px;
             text-align: left;
             transition: transform 0.3s, box-shadow 0.3s;
+            Border-color: #E87722;
+            border-width: 3px;
+            border-style: solid;
+
         }
         .cursor-glow {
   position: fixed;
@@ -65,9 +69,6 @@
         }
         b {
             color:#D4AF37;
-        }
-        .&rarr;{
-            color:;
         }
         .profile-img {
             width: 150px;
