@@ -383,8 +383,6 @@
         color: #ffffff;
         font-size: 5px;
         opacity: 0.7;
-        position: absolute;
-        top: 0;
     }
     .oran:hover{
         color: #ff6200;
