@@ -241,6 +241,43 @@
             text-transform: uppercase;
             letter-spacing: 7px;
         }
+        .olympiad-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            margin: 6px 0;
+        }
+        .olympiad-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+        }
+        .olympiad-rank {
+            font-size: 15px;
+            font-weight: 600;
+            text-align: right;
+            white-space: nowrap;
+        }
+        @media (max-width: 760px) {
+            .olympiad-row {
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            .olympiad-title,
+            .olympiad-rank {
+                width: 100%;
+                text-align: left;
+            }
+            .olympiad-rank {
+                margin-top: 2px;
+            }
+        }
         h1{
             color: #EF7C00; /* Orange */
             line-height: 2.5;
@@ -352,7 +389,7 @@
     }
     .grid{
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 20px;
+        grid-auto-flow: column;
+        gap: 15px;
     }
 
