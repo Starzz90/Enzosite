@@ -413,4 +413,9 @@
         transition: transform 0.3s, box-shadow 0.3s;
 
     }
+    .box:hover{
+        box-shadow: 0 4px 8px rgba(88, 88, 88, 0.2);
+        border-color: rgba(255, 255, 255, 0.379);
+        border-width: 2px;
+    }
 
