@@ -343,11 +343,11 @@
     }
     .oran{
         color: #ffffff;
-        font-size: 8px;
+        font-size: 15px;
     }
     .oran:hover{
         color: #ff6200;
-        transform: scale(1.1);
+        transform: scale(1.15);
         transition: transform 0.3s, color 0.3s;
     }
 
