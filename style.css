@@ -407,9 +407,7 @@
     }
     .box{
         border-radius: 10px;
-        max-width: 680px;
-        margin: auto;
-        padding: 10px 10px;
+        max-width: auto;
         transition: transform 0.3s, box-shadow 0.3s;
 
     }
