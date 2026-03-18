@@ -141,40 +141,27 @@
             -webkit-animation-iteration-count: infinite;
             }
         .btn {
-            background: /*Bright blue */ #e7cc3a;
-            color: white;
+            background: /*Bright blue */ #773800;
+            color: rgb(251, 251, 251);
             padding: 10px 20px;
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
             display: grid;
             display: flex;
-            gap: 20px;
-            margin: 10px;
+            gap: 10px;
+            margin: 2px;
             grid-auto-flow: column;
             overflow-x: hidden;
         }
         .btn:hover {
-            background: #0F1C2E;
-            color: white;
-            font-style: italic;
-            transform : scale(1.1);
+            background: #ff9500;
+            color: rgb(10, 10, 10);
+            font-style: BOLD;
+            transform : scale(1.05);
             transition: transform 0.3s;
             scale: 1.1;
-             /* animation: @-webkit-keyframes pulse {
-            from {
-            -webkit-transform: scale3d(1, 1, 1);
-            transform: scale3d(1, 1, 1);
-            }
-            
-            50% {  */
-            -webkit-transform: scale3d(1.05, 1.05, 1.05);
-            transform: scale3d(1.05, 1.05, 1.05);
-            }
-            
-            to {
-            -webkit-transform: scale3d(1, 1, 1);
-            transform: scale3d(1, 1, 1);
+            animation: pulse;
             }
             @keyframes pulse {
             from {
