@@ -158,6 +158,7 @@
             grid-auto-flow: column;
             overflow-x: hidden;
             font-family: 'Jetbrains Mono', monospace;
+            max-width: 700px;
         }
         .btn:hover {
             background: #744400;
