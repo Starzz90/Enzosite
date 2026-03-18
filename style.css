@@ -46,7 +46,7 @@
             border: 2px solid rgba(255, 149, 1, 0.4);
             animation: glowSection 2.6s ease-in-out infinite;
             box-shadow: 0 0 0 rgba(109, 54, 0, 0.5);
-            padding: 20px;
+            padding: 5px;
             margin-bottom: 12px;
             margin-top: 15px;
             overflow-x: hidden;
@@ -306,9 +306,22 @@
             .olympiad-rank {
                 width: 100%;
                 text-align: left;
+                white-space: normal;
             }
             .olympiad-rank {
                 margin-top: 2px;
+            }
+            .olympiad-row.BOXED-row .box {
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+            .olympiad-row.BOXED-row .box .olympiad-rank {
+                text-align: left;
+                margin-top: 4px;
+            }
+            .olympiad-row.BOXED-row .box .olympiad-title {
+                width: 100%;
             }
         }
         h1{
