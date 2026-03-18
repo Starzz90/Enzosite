@@ -141,7 +141,7 @@
             -webkit-animation-iteration-count: infinite;
             }
         .btn {
-            background: /*Bright blue */ #ff7700;
+            background: #ff7700;
             color: rgb(0, 0, 0);
             padding: 10px 20px;
             text-decoration: none;
@@ -149,7 +149,7 @@
             font-weight: bold;
             display: grid;
             display: flex;
-            gap: 10px;
+            gap: 5px;
             margin: 2px;
             grid-auto-flow: column;
             overflow-x: hidden;
@@ -160,8 +160,9 @@
             font-style: BOLD;
             transform : scale(1.05);
             transition: transform 0.3s;
-            scale: 1.1;
-            animation: pulse;
+            animation: pulse 0.6s ease-in-out infinite;
+            border-color:rgba(255, 102, 0, 0.932)
+            border-width: 2px;
             }
             @keyframes pulse {
             from {
@@ -170,8 +171,8 @@
             }
             
             50% {
-            -webkit-transform: scale3d(1.05, 1.05, 1.05);
-            transform: scale3d(1.05, 1.05, 1.05);
+            -webkit-transform: scale3d(1.02, 1.05, 1.02);
+            transform: scale3d(1.02, 1.05, 1.02);
             }
             
             to {
@@ -382,6 +383,8 @@
     .Division {
         flex-direction: column;
         text-align: center;
+        justify-content: center;
+        display: flex;
     }
     .profile-container {
     display: flex; 
@@ -451,5 +454,11 @@
         box-shadow: 0 4px 8px rgba(88, 88, 88, 0.2);
         border-color: rgba(255, 255, 255, 0.379);
         border-width: 2px;
+    }
+    .give-space{
+        gap: 10px;
+        spacing: 10px;
+        margin-left: 8px;
+        
     }
 
