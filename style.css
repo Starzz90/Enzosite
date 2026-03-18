@@ -250,7 +250,38 @@
             gap: 12px;
             padding: 8px 0;
             border-bottom: 1px solid rgba(255,255,255,0.1);
-            margin: 6px 4px;
+            margin: 0 4px;
+        }
+        .olympiad-row + .olympiad-row {
+            margin-top: 4px;
+        }
+        .olympiad-row.BOXED-row {
+            margin-bottom: 4px;
+        }
+        .olympiad-row.BOXED-row {
+            margin-bottom: 4px;
+        }
+        .olympiad-row.BOXED-row .box {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 5px;
+            border-radius: 5px;
+            border: 2px solid transparent;
+            padding: 8px 10px;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+        .olympiad-row.BOXED-row .box:hover {
+            border-color: #f78c00;
+            box-shadow: 0 0 10px rgba(212, 74, 0, 0.2);
+        }
+        .olympiad-row.BOXED-row .olympiad-title {
+            flex: 1;
+            text-align: left;
+        }
+        .olympiad-row.BOXED-row .olympiad-rank {
+            text-align: right;
         }
         .olympiad-title {
             font-size: 16px;
@@ -285,7 +316,7 @@
             line-height: 2.5;
         }
         h2, h3 {
-            margin-top: 10px;
+            margin-top: 5px;
             color: #EF7C00; /* Orange */
             margin-bottom: 5px;
         
