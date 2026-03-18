@@ -42,6 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
             e.preventDefault();
             myHTML();
         });
+    }
     var cssLink = document.getElementById("css-link");
     if (cssLink) {
         cssLink.addEventListener("click", function (e) {
