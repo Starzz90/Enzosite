@@ -38,7 +38,6 @@
     
         }
         .Container{
-            display: flex;
             border-radius: 20px;
             max-width: 700px;
             margin: auto;
