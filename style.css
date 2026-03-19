@@ -1,5 +1,4 @@
-@import tailwindcss/base;
-@import tailwindcss/components;
+
         body {
             background-color: #0f0f10;
             background-size: cover;
@@ -160,6 +159,7 @@
             overflow-x: hidden;
             font-family: 'Jetbrains Mono', monospace;
             max-width: 700px;
+            border-color: transparent;
         }
         .btn:hover {
             background: #744400;
@@ -352,7 +352,7 @@
             font-size: 15px;
         }
         li{
-            color: white;
+            color: currentColor;
             margin: 10px 0;
             line-height: 1.5;
             font-size: 15px;
@@ -476,8 +476,8 @@
     }
     .give-space{
         gap: 10px;
-        margin-left: 8px;
-        spacing: 10px;
+        margin-left: 20px;
         margin-top: 8px;
+        padding: 20px;
     }
 

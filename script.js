@@ -66,6 +66,9 @@ function myCSS(){
 function myJS(){
     showMessage("A comment from the developer", "Javascript is a language that i find difficult to grasp likely due to how its structured. But i'm aiming to mastering it in the future due to its flexibility and wide range of use cases.")
 }
+function myTailwind(){
+    showMessage("A comment from the developer", "Tailwind CSS is the newest language that i learned, it's very practical and convinient. The only thing that i dislike about it is how complicated the installation process is.");
+}
 
 document.addEventListener("DOMContentLoaded", function () {
     var pyLink = document.getElementById("python-link");
@@ -94,6 +97,13 @@ document.addEventListener("DOMContentLoaded", function () {
         jsLink.addEventListener("click", function (e) {
             e.preventDefault();
             myJS();
+        });
+    }
+    var tailwindLink = document.getElementById("Tailwind-link");
+    if (tailwindLink) {
+        tailwindLink.addEventListener("click", function (e) {
+            e.preventDefault();
+            myTailwind();
         });
     }
 
