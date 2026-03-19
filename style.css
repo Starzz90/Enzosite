@@ -38,6 +38,7 @@
     
         }
         .Container{
+            display: flex;
             border-radius: 20px;
             max-width: 700px;
             margin: auto;
@@ -159,6 +160,7 @@
             font-family: 'Jetbrains Mono', monospace;
             max-width: 100000px;
             border-color: transparent;
+            flex: 1;
         }
         .btn:hover {
             background: #744400;
