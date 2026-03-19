@@ -156,9 +156,8 @@
             gap: 3px;
             margin: 2px;
             grid-auto-flow: column;
-            overflow-x: hidden;
             font-family: 'Jetbrains Mono', monospace;
-            max-width: 700px;
+            max-width: auto;
             border-color: transparent;
         }
         .btn:hover {
