@@ -159,7 +159,6 @@
             font-family: 'Jetbrains Mono', monospace;
             max-width: 100000px;
             border-color: transparent;
-            flex: 1;
         }
         .btn:hover {
             background: #744400;
