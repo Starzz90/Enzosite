@@ -157,7 +157,7 @@
             margin: 2px;
             grid-auto-flow: column;
             font-family: 'Jetbrains Mono', monospace;
-            max-width: auto;
+            max-width: 100000px;
             border-color: transparent;
         }
         .btn:hover {
