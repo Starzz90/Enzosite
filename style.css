@@ -302,6 +302,7 @@
             font-weight: 600;
             text-align: right;
             white-space: nowrap;
+            color: #EF7C00;
         }
         @media (max-width: 760px) {
             .olympiad-row {
