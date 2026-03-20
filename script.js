@@ -61,10 +61,10 @@ function myHTML() {
     showMessage("A comment from the developer", "HTML is the language that I think is not that complicated, though it may be problematic sometimes.");
 }
 function myCSS(){
-    showMessage("A comment from the developer", "CSS is a language that i fell in love with due to my lkiking for design and art. This language enables me to fully embrace my liking in a coding format.")
+    showMessage("A comment from the developer", "CSS is a language that i fell in love with due to my lkiking for design and art. This language enables me to fully embrace my liking in a coding format.");
 }
 function myJS(){
-    showMessage("A comment from the developer", "Javascript is a language that i find difficult to grasp likely due to how its structured. But i'm aiming to mastering it in the future due to its flexibility and wide range of use cases.")
+    showMessage("A comment from the developer", "Javascript is a language that i find difficult to grasp likely due to how its structured. But i'm aiming to mastering it in the future due to its flexibility and wide range of use cases.");
 }
 function myTailwind(){
     showMessage("A comment from the developer", "Tailwind CSS is the newest language that i learned, it's very practical and convinient. The only thing that i dislike about it is how complicated the installation process is.");
