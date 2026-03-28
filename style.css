@@ -45,6 +45,10 @@
             text-align: left;
             transition: transform 0.3s, box-shadow 0.3s;
         }
+        .only-button{
+            margin-top: 10px;
+            max-width: 100000px;
+        }
         .achievements-section {
             border-radius: 15px;
             border: 2px solid rgba(255, 149, 1, 0.4);
@@ -157,8 +161,10 @@
             margin: 2px;
             grid-auto-flow: column;
             font-family: 'Jetbrains Mono', monospace;
-            max-width: 100000px;
+            flex-grow: 1;
             border-color: transparent;
+            margin-bottom: 10px;
+            place-content: center;
         }
         .btn:hover {
             background: #744400;
@@ -389,6 +395,7 @@
             text-align: center;
             justify-content: center;
             display:grid;
+
 
         }
         .shadow {
