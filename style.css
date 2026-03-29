@@ -288,6 +288,14 @@
             border-color: #ff910072;
             box-shadow: 0 0 10px rgba(212, 74, 0, 0.2);
         }
+        .olympiad-row.BOXED-row .oran{
+            color: #ffffff;
+            font-size: 16px;
+        }
+        .olympiad-row.BOXED-row .oran:hover{
+            color: #ff7700;
+            font-size: 16px;
+        }
         .olympiad-row.BOXED-row .olympiad-title {
             flex: 1;
             text-align: left;
@@ -345,6 +353,7 @@
             margin-top: 5px;
             color: #EF7C00; /* Orange */
             margin-bottom: 5px;
+            margin-top: 15px;
         
         }
         .participant{
@@ -406,9 +415,6 @@
             align-items: center;
             margin-bottom: 8px;
         }
-        .left{
-            tetx-align: left;
-        }
         @media (max-width: 768px) {
     .profile-container {
     display: flex; 
@@ -433,6 +439,7 @@
     .center{
         text-align: center;
         align-items: center;
+    }
     .profile-img {
         width: 100px;
         height: 100px;
@@ -482,7 +489,6 @@
     .give-space{
         gap: 10px;
         margin-left: 10px;
-        margin-top: 15px;
+        margin-top: 10px;
         padding: 10px;
     }
-
