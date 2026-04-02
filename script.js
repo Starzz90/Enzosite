@@ -129,6 +129,13 @@ document.addEventListener("DOMContentLoaded", function () {
       myTailwind();
     });
   }
+  var tailwindLink = document.getElementById("PHP-link");
+  if (tailwindLink) {
+    tailwindLink.addEventListener("click", function (e) {
+      e.preventDefault();
+      myPHP();
+    });
+  }
 
   var closeButton = document.getElementById("custom-alert-close");
   if (closeButton) {
