@@ -1,12 +1,13 @@
 
         :root{
-            --primary-color: #ff7700;
-            --secondary-color: #ffb86c;
-            --background-color: #0f0f10;
+            --primary-color: #a67d43;
+            --secondary-color: #d9a55b;
+            --background-color: #121312;
             --text-color: white;
-            --accent-color: #ff9900;
-            --border: rgba(255, 119, 0, 0.6);
+            --accent-color: #ad0013;
+            --border: rgb(152, 121, 74);
             --small: #797979;
+            --accent2-color: #cb0018;
         }
         
         html {
@@ -19,7 +20,7 @@
             font-size: 15px;
             margin: 0;
             padding: 70px 0 0 0;
-            color: white;
+            color: var(--text-color);
             text-align: center;
             animation : fadeIn 1s ease-in-out;
             -webkit-animation: fadeIn 1s ease-in-out;
@@ -61,7 +62,7 @@
         .top-nav-right a:hover,
         .top-nav-right a:focus {
             color: #111;
-            background:var(--primary-color);
+            background:var(--accent-color);
             transform: translateY(-1px);
             outline: none;
         }
@@ -188,7 +189,7 @@
             -webkit-animation-iteration-count: infinite;
             }
         .btn {
-            background: var(--primary-color);
+            background: var(--accent-color);
             color:var(--background-color);
             padding: 20px 20px;
             text-decoration: none;
@@ -236,13 +237,6 @@
         .BRONZE {
             color: #ef7a00;
             color: bronze;/* Bronze color */
-        }
-        .Finalist{
-            color: cornflowerblue;
-        }
-        .glow {
-            animation: glow 2.5s ease-in-out infinite;
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.6), 0 0 40px rgba(0, 204, 255, 0.5);
         }
         @keyframes glow {
             0%, 100% {
@@ -316,7 +310,7 @@
             font-size: 16px;
         }
         .olympiad-row.BOXED-row .oran:hover{
-            color:var(--primary-color);
+            color:var(--accent-color);
             font-size: 16px;
         }
         .olympiad-row.BOXED-row .olympiad-title {
@@ -339,7 +333,7 @@
             font-weight: 600;
             text-align: right;
             white-space: nowrap;
-            color: var(--primary-color);
+            color: var(--accent2-color);
         }
         @media (max-width: 760px) {
             .olympiad-row {
@@ -479,7 +473,7 @@
         opacity: 0.7;
     }
     .oran:hover{
-        color: #ff6200;
+        color: var(--primary-color);
         transform: scale(1.15);
         transition: transform 0.3s, color 0.3s;
     }
@@ -489,11 +483,12 @@
         gap: 15px;
     }
     .orange{
-        color:var(--primary-color);
+        color:var(--accent-color);
     }
     .g{
         color: var(--small);
         font-size: 10px;
+        margin-bottom: 10px;
     }
     .box{
         border-radius: 10px;
