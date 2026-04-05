@@ -142,24 +142,27 @@ document.addEventListener("DOMContentLoaded", function () {
     closeButton.addEventListener("click", closeMessage);
   }
 });
-// Your rotating phrases
+
 const phrases = [
-  "Top 0.47% · 21,148 Participants · Self-Taught",
-  "Building from a city that didn't have the resources — yet.",
-  "Coder. Olympiad Medalist. Padangsidimpuan."
+  "Junior Programmer",
+  "Olympiad Medalist",
+  "Web Developer",
+  "Hunger for The Top",
 ];
 
-const TYPING_SPEED   = 60;    
-const DELETING_SPEED = 30;    
-const PAUSE_AFTER    = 2000;  
-const PAUSE_BEFORE   = 500;   
-const typingEl = document.querySelector('.typing-text');
+const TYPING_SPEED = 60;
+const DELETING_SPEED = 30;
+const PAUSE_AFTER = 2000;
+const PAUSE_BEFORE = 500;
+const typingEl = document.querySelector(".typing");
 
-let phraseIndex  = 0;   
-let charIndex    = 0;   
-let isDeleting   = false;
+let phraseIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
 
 function type() {
+  if (!typingEl) return;
+
   const currentPhrase = phrases[phraseIndex];
 
   if (!isDeleting) {
@@ -172,7 +175,6 @@ function type() {
       return;
     }
     setTimeout(type, TYPING_SPEED);
-
   } else {
     typingEl.textContent = currentPhrase.slice(0, charIndex - 1);
     charIndex--;
@@ -187,5 +189,4 @@ function type() {
   }
 }
 
-
-document.addEventListener('DOMContentLoaded', type);
+document.addEventListener("DOMContentLoaded", type);
