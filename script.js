@@ -144,9 +144,10 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 const phrases = [
-  "Top 0.47% · 21,148 Participants · Self-Taught",
-  "Building from a city that didn't have the resources — yet.",
-  "Coder. Olympiad Medalist. Padangsidimpuan.",
+  "Junior Programmer",
+  "Olympiad Medalist",
+  "Web Developer",
+  "Resilience over Talent",
 ];
 
 const TYPING_SPEED = 60;
