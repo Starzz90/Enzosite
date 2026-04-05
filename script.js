@@ -17,6 +17,9 @@ function SPOTIFY() {
   window.location.href =
     "https://open.spotify.com/user/5x18tquo4f6y6o3fi2eihkfzl";
 }
+window.onload = function(){
+    window.scrollTo(0, 0);
+};
 function showMessage(title, text) {
   var modal = document.getElementById("custom-alert-modal");
   var modalTitle = document.getElementById("custom-alert-title");
