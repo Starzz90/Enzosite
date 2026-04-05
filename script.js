@@ -147,8 +147,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 const phrases = [
-  "Junior.Programmer",
-  "Olympiad.Medalist",
+  "17 year old Junior.Programmer",
+  "National.Olympiad.Medalist",
   "Web.Developer",
   "Resilience over Talent",
 ];
