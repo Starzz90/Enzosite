@@ -434,10 +434,11 @@
             align-items: center;
             margin-bottom: 8px;
         }
-        @media (max-width: 768px) {
-    .profile-container {
+        @media (max-width: 768px){
+    .profile-container{
     align-items: center; /* Aligns items vertically */
     gap: 20px; /* Adds space between image and text */
+    }
 }
 
 .profile-pic {
@@ -488,7 +489,7 @@
     }
     .g{
         color: var(--small);
-        font-size: 10px;
+        font-size: 12px;
         margin-bottom: 10px;
     }
     .box{
@@ -519,6 +520,7 @@
     font-family: 'JetBrains Mono', monospace;
     font-size: 1rem;
     letter-spacing: 0.05em;
+    flex-grow: 1;
     }
 
     .cursor {
