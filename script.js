@@ -142,3 +142,50 @@ document.addEventListener("DOMContentLoaded", function () {
     closeButton.addEventListener("click", closeMessage);
   }
 });
+// Your rotating phrases
+const phrases = [
+  "Top 0.47% · 21,148 Participants · Self-Taught",
+  "Building from a city that didn't have the resources — yet.",
+  "Coder. Olympiad Medalist. Padangsidimpuan."
+];
+
+const TYPING_SPEED   = 60;    
+const DELETING_SPEED = 30;    
+const PAUSE_AFTER    = 2000;  
+const PAUSE_BEFORE   = 500;   
+const typingEl = document.querySelector('.typing-text');
+
+let phraseIndex  = 0;   
+let charIndex    = 0;   
+let isDeleting   = false;
+
+function type() {
+  const currentPhrase = phrases[phraseIndex];
+
+  if (!isDeleting) {
+    typingEl.textContent = currentPhrase.slice(0, charIndex + 1);
+    charIndex++;
+
+    if (charIndex === currentPhrase.length) {
+      isDeleting = true;
+      setTimeout(type, PAUSE_AFTER);
+      return;
+    }
+    setTimeout(type, TYPING_SPEED);
+
+  } else {
+    typingEl.textContent = currentPhrase.slice(0, charIndex - 1);
+    charIndex--;
+
+    if (charIndex === 0) {
+      isDeleting = false;
+      phraseIndex = (phraseIndex + 1) % phrases.length;
+      setTimeout(type, PAUSE_BEFORE);
+      return;
+    }
+    setTimeout(type, DELETING_SPEED);
+  }
+}
+
+
+document.addEventListener('DOMContentLoaded', type);
