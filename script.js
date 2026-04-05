@@ -144,10 +144,9 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 const phrases = [
-  "Junior Programmer",
-  "Olympiad Medalist",
-  "Web Developer",
-  "Hunger for The Top",
+  "Top 0.47% · 21,148 Participants · Self-Taught",
+  "Building from a city that didn't have the resources — yet.",
+  "Coder. Olympiad Medalist. Padangsidimpuan.",
 ];
 
 const TYPING_SPEED = 60;
