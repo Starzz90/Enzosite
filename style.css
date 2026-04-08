@@ -50,6 +50,9 @@
         .top-nav-right {
             justify-content: flex-end;
         }
+        .top-nav-left{
+            justify-content: flex-start;
+        }
         .top-nav a {
             color: var(--accent-color);
             padding: 0.6rem 0.9rem;
