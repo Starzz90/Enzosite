@@ -32,23 +32,23 @@
             right: 0;
             height: 60px;
             display: flex;
-            justify-content: space-between;
             align-items: center;
             background: rgba(15, 15, 16, 0.96);
             border-bottom: 1px solid var(--border);
             z-index: 10000;
+            justify-content: space-between;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
             padding: 0 1rem;
         }
         .top-nav-left,
         .top-nav-right {
             display: flex;
-            align-items: center;
             gap: 0.8rem;
             flex-shrink: 1;
         }
         .top-nav-right {
             justify-content: flex-end;
+            
         }
         .top-nav-left{
             justify-content: flex-start;
@@ -113,7 +113,7 @@
             animation: glowSection 2.6s ease-in-out infinite;
             box-shadow: 0 0 0 rgba(109, 54, 0, 0.5);
             padding: 5px;
-            margin-bottom: 12px;
+            margin-bottom: 18px;
             margin-top: 15px;
             overflow-x: hidden;
             overflow-y: hidden;

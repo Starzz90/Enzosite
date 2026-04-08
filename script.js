@@ -151,6 +151,7 @@ const phrases = [
   "National.Olympiad.Medalist",
   "Web.Developer",
   "Resilience over Talent",
+  "Tech Enthusiast",
 ];
 
 const TYPING_SPEED = 60;
