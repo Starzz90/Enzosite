@@ -92,7 +92,7 @@ function myTailwind() {
 function myPHP() {
   showMessage(
     "A comment from the developer",
-    "PHP is a language that i find very interesting even though many despise it due to its difficulty. PHP has helped me elevate my overall web dev abilities and i will continue to improve in it.",
+    "PHP is a language that i find very interesting even though many despise it due to its difficulty. PHP has helped me elevate my overall web dev abilities and i will continue to improve in it and its very enjoyable for me who prioritize user interface.",
   );
 }
 
