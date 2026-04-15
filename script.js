@@ -160,14 +160,14 @@ document.addEventListener("DOMContentLoaded", function () {
   var sidebarLinks = sidebar.querySelectorAll("a");
   sidebarLinks.forEach(function (link) {
     link.addEventListener("click", function () {
-      sidebar.classList.toggle("visible");
+      sidebar.classList.remove("visible");
     });
   });
 
 
   document.addEventListener("click", function (e) {
     if (!sidebar.contains(e.target) && e.target !== moreBtn) {
-      sidebar.classList.toggle("visible");
+      sidebar.classList.remove("visible");
     }
   });
 });
