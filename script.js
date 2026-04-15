@@ -17,8 +17,8 @@ function SPOTIFY() {
   window.location.href =
     "https://open.spotify.com/user/5x18tquo4f6y6o3fi2eihkfzl";
 }
-window.onload = function(){
-    window.scrollTo(0, 0);
+window.onload = function () {
+  window.scrollTo(0, 0);
 };
 function showMessage(title, text) {
   var modal = document.getElementById("custom-alert-modal");
@@ -144,6 +144,40 @@ document.addEventListener("DOMContentLoaded", function () {
   if (closeButton) {
     closeButton.addEventListener("click", closeMessage);
   }
+
+  // Sidebar toggle functionality
+  var moreBtn = document.getElementById("more-btn");
+  var sidebar = document.getElementById("sidebar");
+  var closeSidebarBtn = document.getElementById("close-btn");
+
+  if (moreBtn) {
+    moreBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      sidebar.classList.toggle("visible");
+    });
+  }
+
+  if (closeSidebarBtn) {
+    closeSidebarBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      sidebar.classList.remove("visible");
+    });
+  }
+
+
+  var sidebarLinks = sidebar.querySelectorAll("a");
+  sidebarLinks.forEach(function (link) {
+    link.addEventListener("click", function () {
+      sidebar.classList.remove("visible");
+    });
+  });
+
+
+  document.addEventListener("click", function (e) {
+    if (!sidebar.contains(e.target) && e.target !== moreBtn) {
+      sidebar.classList.remove("visible");
+    }
+  });
 });
 
 const phrases = [
