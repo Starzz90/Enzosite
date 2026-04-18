@@ -59,6 +59,10 @@ function SPOTIFY() {
   window.location.href =
     "https://open.spotify.com/user/5x18tquo4f6y6o3fi2eihkfzl";
 }
+FUNCTION CONTACT(){
+  window.location.href =
+  "https://www.linkedin.com/in/enzo-davidson-tjen-25b168354/";
+}
 function myPYTHON() {
   showMessage(
     "A comment from the developer",
