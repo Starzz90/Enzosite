@@ -621,3 +621,15 @@ li {
   font-weight: 700;
   letter-spacing: 0.06rem;
 }
+
+.line{
+  border-bottom: 1px solid var(--secondary-color);
+  opacity: 0.5;
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.triple-column{
+    display: grid;
+    grid-auto-columns: minmax(200px, 3fr);
+}
