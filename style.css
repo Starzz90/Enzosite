@@ -622,24 +622,28 @@ li {
   letter-spacing: 0.06rem;
 }
 
-.line{
+.line {
   border-bottom: 1px solid var(--secondary-color);
   opacity: 0.5;
   width: 100%;
 }
-.triple-column{
-    display: flex;
-    justify-content: space-evenly;
-    gap: 120px;
-
-
+.triple-column {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  gap: 40px;
 }
-.center-all{
+.center-all {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  padding: 10px 0;
 }
-.go-down{
+.go-down {
   display: grid;
   place-content: center;
+  flex: 1;
+  text-align: center;
 }
